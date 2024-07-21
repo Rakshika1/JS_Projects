@@ -1,0 +1,52 @@
+body{
+    background: transparent;
+    background-image: url("image.webp");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    overflow: hidden;
+
+    .keys{
+        display: flex;
+
+        flex-wrap: wrap; 
+        justify-content: center; 
+        align-items: centre;
+        /* aagar space na hoo too items ko new line mee dal doo */
+
+    }
+
+    .key{
+        border:0.5rem solid black;
+        border-radius: 0.5rem;
+        margin:1rem;
+        font-size:1.5rem;
+        padding:1rem 1.5rem;
+        transition: all 0.07s ease ;
+        width:10rem;
+        text-align: center;
+        color:white;
+        background-color: black;
+        box-shadow :0 0 1rem rgba(253, 251, 251, 0.3);
+    }
+    .key kbd{
+        display: box;
+        font-size: 2rem;
+    }
+    .key .sound{
+        font-size: 1.2rem;
+        color: yellow;
+    }
+    .key:active{
+        transform: scale(1.1);
+        border-color: yellow;
+    }
+}
